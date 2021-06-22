@@ -87,8 +87,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${compile.class.source}</source>
+                    <target>${compile.class.target}</target>
                 </configuration>
             </plugin>
         </plugins>
