@@ -519,7 +519,7 @@ public class ConfigurationImpl
         // set up property descriptor
         PropertyDescriptor pd;
         try {
-            pd = new PropertyDescriptor(Introspector.decapitalize(prop),
+            pd = new PropertyDescriptor((String)Introspector.decapitalize(prop),
                 getClass());
         } catch (IntrospectionException ie) {
             // if there aren't any methods for this value(i.e., if it's a
