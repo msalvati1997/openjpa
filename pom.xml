@@ -1939,9 +1939,11 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
+					<release>8</release>
+                    <version>3.8.0</version>
                     <configuration>
-                        <source>1.8</source>
-						<target>1.8</target>
+                        <source>${compile.class.source}</source>
+                        <target>${compile.class.target}</target>
                         <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
                 </plugin>
