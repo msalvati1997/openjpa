@@ -5,11 +5,11 @@
     <artifactId>openjpa</artifactId>
     <groupId>org.apache.openjpa</groupId>
   </parent>
-    <artifactId>tests</artifactId>
+    <artifactId>jacoco-reports</artifactId>
     <properties>
         <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../${aggregate.report.dir}</sonar.coverage.jacoco.xmlReportPaths>
     </properties>
-    <name>tests</name>
+    <name>jacoco-reports</name>
     <dependencies>
         <dependency>
             <groupId>org.apache.openjpa</groupId>

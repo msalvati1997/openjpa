@@ -188,6 +188,7 @@
         <module>openjpa-project</module>
      <!-- <module>openjpa-examples</module> -->
         <module>openjpa-integration</module>
+		<module>jacoco-reports</module>
         <module>openjpa-all</module>
         <module>openjpa-tools</module>
         <module>openjpa-features</module>
