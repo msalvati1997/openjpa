@@ -84,7 +84,7 @@ public interface FillStrategy<T> {
         public T fill(Object[] values, Class<?>[] types, String[] aliases) {
             int i = 0;
             try {
-                Object map = putMethod.getDeclaringClass().newInstance();
+				Object map = putMethod.getDeclaringClass().newInstance();
                 for (i = 0; i < values.length; i++)
                     putMethod.invoke(map, aliases[i], values[i]);
                 return (T)map;
@@ -109,7 +109,6 @@ public interface FillStrategy<T> {
         public NewInstance(Constructor<? extends T> cons) {
             this.cons = cons;
         }
-
         public NewInstance(Class<T> cls) {
             this.cls = cls;
         }
