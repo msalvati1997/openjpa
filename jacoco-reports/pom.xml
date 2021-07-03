@@ -12,13 +12,15 @@
     </properties>
     <name>jacoco-reports</name>
     <dependencies>
-        <dependency>
+         <dependency>
             <groupId>org.apache.openjpa</groupId>
             <artifactId>openjpa-kernel</artifactId>
+            <version>${project.version}</version>
         </dependency>
 		 <dependency>
             <groupId>org.apache.openjpa</groupId>
             <artifactId>openjpa-lib</artifactId>
+			<version>${project.version}</version>
         </dependency>
     </dependencies>
     <build>
