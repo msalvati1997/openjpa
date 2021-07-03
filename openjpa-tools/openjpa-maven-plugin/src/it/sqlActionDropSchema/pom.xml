@@ -28,6 +28,10 @@
         <groupId>org.apache.openjpa</groupId>
         <artifactId>openjpa-tools</artifactId>
         <version>@pom.version@</version>
+		<properties>
+ <maven.compiler.source>1.8</maven.compiler.source>
+ <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
     </parent>
 
     <groupId>org.apache.openjpa.tools.openjpa-maven-plugin.testing</groupId>
@@ -115,6 +119,7 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
+                    <version>3.2.1</version>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>

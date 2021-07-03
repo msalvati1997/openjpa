@@ -33,7 +33,10 @@
     <groupId>org.apache.openjpa.tools.openjpa-maven-plugin.testing</groupId>
     <artifactId>enhanceIncludesExcludes</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+     <properties>
+       <maven.compiler.source>1.8</maven.compiler.source>
+       <maven.compiler.target>1.8</maven.compiler.target>
+     </properties>
     <dependencies>
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
@@ -73,6 +76,7 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
+					    <version>3.2.1</version>
                         <source>1.8</source>
                         <target>1.8</target>
                     </configuration>

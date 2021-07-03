@@ -60,6 +60,8 @@ import java.util.Set;
  * @since 2.0.0
  *
  */
+
+
 public class ResultShape<T> implements Serializable {
     private static final long serialVersionUID = 1L;
     private final Class<T> cls;        // the type of value this shape represents or populates
