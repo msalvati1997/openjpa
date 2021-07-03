@@ -1743,7 +1743,9 @@
                 </repository>
             </repositories>
         </profile>
-  
+
+    </profiles>
+
     <!-- default versions for dependencies that child modules may include -->
     <dependencyManagement>
         <dependencies>
