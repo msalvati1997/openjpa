@@ -1916,8 +1916,6 @@
     </dependencies>
 
     <build>
-        <defaultGoal>install</defaultGoal>
-
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -1929,7 +1927,6 @@
                 <directory>src/test/resources</directory>
             </testResource>
         </testResources>
-
         <pluginManagement>
             <plugins>
 			 <plugin>
@@ -1937,11 +1934,6 @@
           <artifactId>sonar-maven-plugin</artifactId>
           <version>3.6.0.1398</version>
         </plugin>
-        <plugin>
-          <groupId>org.jacoco</groupId>
-          <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.4</version>
-        </plugin> 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -1953,6 +1945,25 @@
                         <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
                 </plugin>
+				<plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${jacoco-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+             <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <goals>
+             <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+        </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
@@ -2217,6 +2228,7 @@
         </pluginManagement>
 
         <plugins>
+		
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
