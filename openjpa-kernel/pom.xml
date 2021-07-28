@@ -191,7 +191,8 @@
                         </configuration>
                         <executions>
                             <execution>
-                                <id>mutuation-coverage</id>
+                                <id>pit-report</id>
+                                <phase>test</phase>
                                 <goals>
                                     <goal>mutationCoverage</goal>
                                 </goals>
